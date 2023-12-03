@@ -1,0 +1,26 @@
+<!-- Functional Requirements
+
+    Geolocation API: On the landing screen, the user should only see a "Fetch Data" button. Once clicked, the application should use the Geolocation API to fetch the latitude and longitude of the user's current device.
+    Displaying the Map: Using the acquired latitude and longitude, show the user's location on Google Maps.
+    Fetching Weather Data: Use the `One Call API` from OpenWeatherMap to fetch the current weather data for the given coordinates- (https://openweathermap.org/api/one-call-3)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="weather-container">
+        <div class="heading"><h1>Weather API</h1></div>
+        <div class="fetchButton">
+            <a href="./main.html"><button id="fetchData" onclick="getMyLocation()">Fetch Data</button></a>
+        </div>
+    </div>
+    
+
+</body>
+<script src="./script.js"></script>
+</html>
